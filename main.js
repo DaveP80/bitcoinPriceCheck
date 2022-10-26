@@ -3,7 +3,6 @@ const cheerio = require('cheerio');
 const express = require('express')
 const cors = require('cors')
 
-
 async function getPrice() {
 
     try {
@@ -14,7 +13,7 @@ async function getPrice() {
             method: "GET",
             url: url,
         })
-        
+
         const circularReference = data;
         circularReference.myself = circularReference;
 
